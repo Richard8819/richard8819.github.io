@@ -1,1 +1,27 @@
-
+Work Experience
+DATES June 2020 - Present
+POSITION Product Engineer
+RESPONSIBILITIES Developed & deployed server scripts in Infrastructure as a Code environments
+using git for versioning, Azure CICD pipelines, enabling 1 touch deployments.
+Strengthened banking operations' security posture by driving Zero trust project -
+ZPA (Zscaler Private Access) for employee access management in Asian markets.
+Architected & deployed enterprise grade Zero Trust Solutions (ZIA & ZPA) with
+advanced policy configuration, SSL inspection, sandboxing, URL/cloud controls to
+proactively neutralise threats & safeguard millions of daily transactions.
+Led Tier-3 incident investigations for secure web proxy issues, applying forensic
+techniques like log parse, packet captures, performance diagnostics to accelerate
+containment & cut MTTR by over 20%.
+Enabled SAML-based seamless authentication to enhance Zero Trust Network
+Access user experience. Facilitated periodic ZCC n-1 version rollouts.
+Designed & deployed production ready Squid proxy clusters by integrating with
+Azure DevOps automation, providing streamlined operations. (Day0, Day1).
+Streamlined onboarding and off-boarding processes to boost operational
+efficiency with Azure DevOps integrations with proxy.
+Facilitated MS Teams UDP traffic routing in non-default route via SDWAN,
+providing functionality of modern app in traditional NDR setup.
+Managed complete Zscaler product lifecycle, ensuring vendors comply with banks’
+security standards.
+Participate in internal, external GRC audits.
+Create & update web filtering policies as per user incident tickets.
+Conduct internal security assessments for new application onboarding.
+EMPLOYER STANDARD CHARTERED BANK GBS
