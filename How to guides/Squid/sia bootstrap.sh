@@ -40,3 +40,4 @@ mkdir -p /etc/squid/src-workload-configs
 touch /etc/squid/src-workload-configs/dummy.conf
 ip= ifconfig ens192 | grep inet | awk '{print $2}'
 echo "acl src_42030 src $ip" > /etc/squid/src-workload-configs/dummy.conf
+echo "acl src_
