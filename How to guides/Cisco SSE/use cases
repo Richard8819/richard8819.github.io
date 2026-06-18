@@ -1,1 +1,109 @@
+// On-prem AD integration
+what attributes from AD are used to create policy in SSE.
+Microsoft 365 Integration for CASB
+Microsoft 365 Integration for Cloud Malware
+SSO MFA integration with on prem AD
+MFA for call center agents w/o mobile.
+
+// Secure Internet Access (SWG and Proxy)
+Block/allow web site based on content category
+Block/allow a specific domain/URL/IP from a destination list
+Block/allow a specific application based on application list
+Bypass a site from decryption using do not encrypt list
+Block a download based on file type. 
+Enforce Safe Search 
+Restrict browsing newly registered domain
+Restrict access to personal google workspace however allow access to enterprise google workspace/ tenant restriction on microsoft.
+SSL Decryption bypass for Financial Categories
+Threat scanning Demonstrate using eicar or any websites to prevent download of malwares as per Customer.
+Build Custom categories/whitelist/blacklist
+application bypass from SWG 
+TCP traffic i.e non browser based. 
+Reserved IP use case. India tenancy
+application based allow/block
+
+// App Discovery and Control (Web Apps)
+Review cloud applications with associated risk level in use in Application Discovery Dashboard
+Block functionality within an application–including:
+Risk Based policies - Policies based on Risk of the apps
+Time bound rules - onedrive based on time (9am -10am) slot restrict the download/upload. (bandwidth/QoS based)
+On-network/off-network detection criteria via agent.
+fail close/fail open
+agent upgrade cycle
+domain based bypass 
+
+// CASB
+Shadow IT Visibility
+Differentiating between Corporate & Non Corp (External or Personal) instance of the applications and applying different activity controls on different instances
+Auto identifying multiple instances of similar applications (O365/Google/AWS/GitHub/Atlassian and others)..
+Apply different users/group policies to separate instances of O365 instance/Google/AWS 
+Activity based controls across 100's of applications 
+
+// Tenant Control Profile
+Identify your corporate instance for a cloud application and restrict users to only access that instance (i.e., Prevent access to personal accounts such as personal GitHub, and Gmail, outlook etc
+
+// Reporting, Logging and Monitoring
+Review pre-defined reports. Security Overview,
+Security Activity, Activity Search, etc.
+Scheduled Reports
+S3 storage for access to logs (Cisco managed or customer managed AWS S3 bucket)
+Specific activity search down to user/hostname/URL
+bandwith report for user/tunnel/application
+SEIM integration 
+
+// Threat Protection
+Threats from Internet/Unsactioned apps/Websites
+Sandboxing and Hueristic Analysis of Files
+Sandbox analysis for known extensions such as word, excel, pdf etc
+
+// Security Protection
+Phishing attempts from links to fraudulent sites
+Malicious files from being downloaded to users
+Malicious file blocking on HTTPS sites
+DNS tunneling
+DNS packet inspection
+
+// DNS Security
+Block /Sinkholing ( Security Risk Sites / Newly Registered Domains)
+Whitelisting/Blacklisting/Exceptions
+Validate logs and DNS based reporting
+Detection of data exfiltration via DNS
+Blocking Access to Malicious Domains
+Malicious IP communication /DGA-dynamic generation algorithm - how to block
+
+// Threat Intelligence
+Understand why a threat was blocked in your environment
+Understand how targeted the threat may be towards
+Visualize additional information of the threat which may be Useful in identifying other IOCs
+
+// Secure Private Access (ZTNA)
+Agentless Access for Contractors and BYOD
+Secure private access to internal App and cloud hosted apps
+Application data protection
+Hybrid Workforce security
+Integration with Office 365 and Salesforce
+test via devices like, mobile(android/ios) 
+test for 3rd party (mac/windows) - Will create ZTNA application profiles.
+server to client communication over Ipsec
+
+// Posture profile
+Apple Mac OS 
+Microsoft  Windows
+OS and Domain check
+Antivirus
+
+// Simplified Admin Experience
+Onboard a new user/group by integrating with SCIM based identity provider or active directory using AD connector
+Configure Single Sign On to for ZTNA and SWG (ipsec tunnel only)
+Establish IPSEC tunnel with op premise Datacenter and configure routing to enable communication between on premise servers/device with Cisco Secure Access
+Create a VPN headend and configure SAML authentication for VPN
+Create private application resources to be used configured with Client based ZTNA / Clientless browser-based access / VPN
+Troubleshooting: Review client forwarding settings, Secure Private Access & Secure Internet access rules and associated logs for a given user/group
+
+// DEM 
+Dashboard pinpoints latency without manual packet capture
+Help desk can distinguish Wi-Fi problems from application issues
+Root cause identified as ISP rather than endpoint or application
+IT can prove the issue is with the SaaS provider
+Browser-related degradation isolated
 
