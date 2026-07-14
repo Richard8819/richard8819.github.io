@@ -1,0 +1,25 @@
+endpoint details
+  mac, win, linux
+User base
+  geolocations, Dc, branch, hubs, main office etc.
+What is the total user count
+What is the workload count and types
+  linux , windows etc
+is there a use case for Endpoint security (av)
+  Is user machine protected with Endpoint security (AV)
+  is workloads protected with Endpoint security (AV)
+is there a use case for Endpoint DLP
+  Is user machine protected with Endpoint DLP
+  is workloads protected with Endpoint DLP
+Is there a MDM solution or any on prem SCCM solution used ?
+Backhaul traffic or Direct Internet access
+Do you use VPN to secure private resources
+Do you use VDI. 
+do third party users access private resources.
+Do you require TLS inspection for outbound traffic
+Is there any governance required by specific regulations like GDPR, HIPAA, PCI-DSS
+what IDP is currently used. Is it federated. 
+How many users/ workloads need coverage. 
+Is there any exsting proxy solution.
+Do you want to utilize DLP features 
+is there an exisitng PAC file deployed
