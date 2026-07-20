@@ -1,25 +1,313 @@
-endpoint details
-  mac, win, linux
-User base
-  geolocations, Dc, branch, hubs, main office etc.
-What is the total user count
-What is the workload count and types
-  linux , windows etc
-is there a use case for Endpoint security (av)
-  Is user machine protected with Endpoint security (AV)
-  is workloads protected with Endpoint security (AV)
-is there a use case for Endpoint DLP
-  Is user machine protected with Endpoint DLP
-  is workloads protected with Endpoint DLP
-Is there a MDM solution or any on prem SCCM solution used ?
-Backhaul traffic or Direct Internet access
-Do you use VPN to secure private resources
-Do you use VDI. 
-do third party users access private resources.
-Do you require TLS inspection for outbound traffic
-Is there any governance required by specific regulations like GDPR, HIPAA, PCI-DSS
-what IDP is currently used. Is it federated. 
-How many users/ workloads need coverage. 
-Is there any exsting proxy solution.
-Do you want to utilize DLP features 
-is there an exisitng PAC file deployed
+# Cisco Secure Access (SSE) Pre-Deployment Questionnaire
+
+## 1. Organization Overview
+
+* Organization name
+* Primary point of contact
+* Project stakeholders
+* Expected deployment timeline
+* Business-critical applications
+* Any planned infrastructure changes during deployment?
+
+---
+
+## 2. User Environment
+
+* Total number of users
+* Internal users
+* Remote users
+* Contractors/third-party users
+* Privileged users
+* Geographic locations
+* Headquarters
+* Branch offices
+* Data centers
+* Cloud-only users
+* Average concurrent users
+* Internet breakout model
+
+  * Direct Internet Access
+  * Backhaul through Data Center
+  * Hybrid
+
+---
+
+## 3. Endpoint Details
+
+* Endpoint operating systems
+
+  * Windows
+  * macOS
+  * Linux
+  * ChromeOS
+  * iOS
+  * Android
+* Corporate-managed vs BYOD devices
+* Device ownership
+* Existing endpoint management
+
+  * Microsoft Intune
+  * SCCM
+  * VMware Workspace ONE
+  * Jamf
+  * MobileIron
+* Are users local administrators?
+* Existing VPN client installed?
+* Existing Secure Client/AnyConnect installed?
+
+---
+
+## 4. Identity & Authentication
+
+* Identity Provider
+
+  * Azure AD (Entra ID)
+  * Okta
+  * Ping
+  * ADFS
+  * Google Workspace
+* Is SAML already configured?
+* Is SCIM provisioning required?
+* MFA solution used
+* User groups available for policy assignment?
+* Federated identity?
+* Guest users?
+* Service accounts?
+
+---
+
+## 5. Workloads
+
+* Total workloads
+* Operating systems
+* Windows Servers
+* Linux Servers
+* Kubernetes
+* Containers
+* Cloud workloads
+* On-prem workloads
+* Critical applications hosted
+
+---
+
+## 6. Network Infrastructure
+
+* Number of Internet breakouts
+* ISP details
+* Public IP addresses
+* Existing firewall vendors
+* Existing proxy solution
+* Existing PAC file
+* Existing Explicit Proxy
+* Existing Transparent Proxy
+* Existing SWG
+
+---
+
+## 7. Private Access (ZTNA)
+
+* Applications requiring private access
+* Web applications
+* Client/server applications
+* SSH
+* RDP
+* SMB
+* Database applications
+* Internal DNS domains
+* Private DNS servers
+* Internal subnets
+* Any overlapping IP ranges?
+* Existing VPN solution
+* Site-to-site VPNs
+* Third-party vendor access?
+* VDI environment?
+* Published applications?
+
+---
+
+## 8. DNS
+
+* Internal DNS servers
+* External DNS provider
+* Split DNS in use?
+* Internal domains
+* DNS forwarding
+* Conditional forwarding
+
+---
+
+## 9. Security Stack
+
+### Endpoint Security
+
+* Endpoint AV installed?
+* Which vendor?
+* CrowdStrike
+* Defender
+* SentinelOne
+* Trend Micro
+* Sophos
+* McAfee
+
+### Endpoint DLP
+
+* Existing DLP?
+* Vendor?
+* Policies currently enforced?
+
+### Email Security
+
+* Microsoft Defender
+* Proofpoint
+* Mimecast
+* Cisco ESA
+
+### CASB
+
+* Existing CASB solution?
+* Microsoft Defender
+* Netskope
+* Zscaler
+* Skyhigh
+
+### SIEM
+
+* Splunk
+* QRadar
+* Microsoft Sentinel
+* Elastic
+* Chronicle
+
+---
+
+## 10. Internet Access Requirements
+
+* TLS/SSL Inspection required?
+* Certificate pinning applications?
+* Applications that must bypass inspection?
+* High-bandwidth applications?
+* SaaS applications
+* O365 optimization required?
+* Zoom
+* Teams
+* WebEx optimization required?
+
+---
+
+## 11. Data Protection
+
+* Is DLP required?
+* Data classification available?
+* Sensitive data types
+
+  * PCI
+  * HIPAA
+  * PII
+  * Financial
+* File upload restrictions?
+* USB restrictions?
+* Cloud upload restrictions?
+
+---
+
+## 12. Compliance
+
+Applicable regulations:
+
+* GDPR
+* HIPAA
+* PCI-DSS
+* ISO 27001
+* SOC2
+* NIST
+* RBI
+* Other regulatory requirements
+
+---
+
+## 13. Logging & Monitoring
+
+* Existing SIEM
+* Syslog server
+* Log retention period
+* Required audit reports
+* SOC team involved?
+* 24x7 monitoring?
+
+---
+
+## 14. Existing Cisco Environment
+
+* Cisco Secure Client already deployed?
+* Cisco Umbrella?
+* Cisco Duo?
+* Cisco Secure Endpoint?
+* Cisco Secure Firewall?
+* Cisco XDR?
+* ThousandEyes?
+* Secure Access already partially deployed?
+
+---
+
+## 15. Application Inventory
+
+Provide a list of critical applications including:
+
+| Application | URL/FQDN | Internal/Public | Authentication | Port | Owner |
+| ----------- | -------- | --------------- | -------------- | ---- | ----- |
+
+---
+
+## 16. Certificates
+
+* Internal PKI available?
+* SSL inspection certificates available?
+* Public certificates?
+* Certificate lifecycle management?
+* Certificate authority details?
+
+---
+
+## 17. Deployment Readiness
+
+* Pilot users available?
+* Number of pilot users
+* Test machines available?
+* Maintenance windows
+* Rollback plan
+* Change approval process
+* Production deployment dates
+
+---
+
+## 18. Success Criteria
+
+* Expected business outcomes
+* Performance expectations
+* Security objectives
+* User experience expectations
+* Go-live acceptance criteria
+
+---
+
+### Additional Information Requested
+
+Please provide the following artifacts before the design workshop:
+
+* Network topology diagram
+* Internet breakout architecture
+* Firewall topology
+* IP addressing scheme
+* Existing proxy configuration
+* PAC file (if applicable)
+* VPN topology
+* Identity architecture
+* List of internal applications
+* Public IP inventory
+* Existing security architecture
+* DNS architecture
+* SSL certificate details
+* List of business-critical applications
+
+This expanded questionnaire aligns well with Cisco Secure Access (SSE) design workshops and typically captures nearly all of the information needed to design services such as Secure Web Gateway (SWG), Zero Trust Network Access (ZTNA), Firewall-as-a-Service (FWaaS), Remote Browser Isolation (RBI), DNS-layer security, and Data Loss Prevention (DLP) while minimizing follow-up discovery sessions.
+
