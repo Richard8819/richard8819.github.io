@@ -83,6 +83,8 @@ echo ==========================================
 
 pause
 
+// for deploying to small number of devices //
+
 // for uninstallation to small number of devices //
 @echo off
 setlocal
@@ -137,6 +139,8 @@ rmdir /S /Q "C:\ProgramData\Cisco\Cisco Secure Client" 2>nul
 echo.
 echo ==========================================
 echo Cisco Secure Client has been removed.
+
+// for uninstallation to small number of devices //
 echo Logs are available at:
 echo %LOGDIR%
 echo ==========================================
