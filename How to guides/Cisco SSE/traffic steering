@@ -1,1 +1,9 @@
+for internet access:
+Option1: use Umbrella module - provides DNS security.
+  if Umbrella for SWG is activated - then is acts as a Web proxy and provides DNS security together.
 
+Option2: Use ANyconnect Module to steer traffic to SWG
+  This method carries all ports/ protocol on DTL/TLS 
+
+Option3: Use ZTA - TIA (Trusted Internet Access) 
+ This method uses MASQUE over HTTP/3 (QUIC) to tunnel application traffic. MASQUE leverages HTTP Datagrams and CONNECT-UDP/CONNECT-IP mechanisms to securely proxy UDP and IP traffic while enforcing Zero Trust policies
