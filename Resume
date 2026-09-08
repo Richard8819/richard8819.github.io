@@ -1,0 +1,145 @@
+COMPUTER SKILLS AND COMPETENCIES
+Zero Trust Architecture | ZIA & ZPA Architecture Deployment & Optimisation |
+Secure Web Proxy Gateway (Zscaler, Squid Proxy) integration with Azure DevOps |
+Threat Detection & Prevention (ATP, DLP, Malware Protection) | DNS | AWS Security
+Architect Associate | SAML integration with Azure & OKTA | PKI | Automation | Cisco
+ASA | Routing | Professional Services | Product engineering | Load Balancer | Linux |
+IaC | PAC scripting | Global stakeholder Engagement & Collaboration | Security
+Policy Design & Compliance Alignment | Cloud Security Strategy & Implementation
+| Wireshark | Cisco Anyconnect VPN & WireGuard | Fiddler
+
+Work Experience
+DATES June 2020 - Present
+POSITION Product Engineer
+RESPONSIBILITIES Developed & deployed server scripts in Infrastructure as a Code environments
+using git for versioning, Azure CICD pipelines, enabling 1 touch deployments.
+Strengthened banking operations' security posture by driving Zero trust project -
+ZPA (Zscaler Private Access) for employee access management in Asian markets.
+Architected & deployed enterprise grade Zero Trust Solutions (ZIA & ZPA) with
+advanced policy configuration, SSL inspection, sandboxing, URL/cloud controls to
+proactively neutralise threats & safeguard millions of daily transactions.
+Led Tier-3 incident investigations for secure web proxy issues, applying forensic
+techniques like log parse, packet captures, performance diagnostics to accelerate
+containment & cut MTTR by over 20%.
+Enabled SAML-based seamless authentication to enhance Zero Trust Network
+Access user experience. Facilitated periodic ZCC n-1 version rollouts.
+Designed & deployed production ready Squid proxy clusters by integrating with
+Azure DevOps automation, providing streamlined operations. (Day0, Day1).
+Streamlined onboarding and off-boarding processes to boost operational
+efficiency with Azure DevOps integrations with proxy.
+Facilitated MS Teams UDP traffic routing in non-default route via SDWAN,
+providing functionality of modern app in traditional NDR setup.
+Managed complete Zscaler product lifecycle, ensuring vendors comply with banks’
+security standards.
+Participate in internal, external GRC audits.
+Create & update web filtering policies as per user incident tickets.
+Conduct internal security assessments for new application onboarding.
+EMPLOYER STANDARD CHARTERED BANK GBS
+TYPE OF BUSINESS Banking & Finance.
+
+DATES June 2017 - June 2020
+POSITION RESPONSIBILITIES Deployment Consultant
+Led full deployment lifecycle for Zscaler’s strategic enterprise clients, from sales
+hand-off to production transition.
+Architected customer design strategies, facilitating integration with Zscaler cloud
+products and provided tailored solutions.
+Developed lab environments simulating customer networks for seamless Zscaler
+product integration.
+Researched and analysed emerging technologies to improve guidance on secure
+Zscaler integration.
+Produced technical documentation and architectural diagrams tailored to customer
+networks.
+implemented advanced policies for SSL inspection, DLP, ATP, malware protection,
+and SIEM integration, strengthening enterprise threat prevention.
+Managed and escalated customer issues during deployment single-handedly,
+ensuring timely resolutions from support verticals.
+Mentored new joiners to enhance product knowledge.
+EMPLOYER ZSCALER INDIA PVT. LTD.
+TYPE OF BUSINESS Information Technology
+
+DATES Dec 2015 - June 2017
+POSITION RESPONSIBILITIES Sr. Project Engineer
+Implemented, managed and secured the complete client enterprise network
+having PAN India presence.
+Documented Standard Operation Procedures (SOP).
+Upgraded, Updated and maintained the network and security products as per ISO
+27001 standards.
+Advised the client with secure network implementations for any new project
+requirements. Latest being Microsoft Cloud (O365, OneDrive, RMS)
+implementations along with creating L2L VPN for customer.
+Participated in team discussions by providing inputs in improving the existing
+network and finding loopholes and weak nodes.
+Provided feedback on existing network security and creating test cases for any
+architecture failure scenarios with their workarounds.
+Coordinated with vendors for escalations and maintaining the SLA per ITIL process.
+Contributed to the company by educating/ sharing knowledge to fellow
+teammates on various technologies.
+EMPLOYER Wipro Ltd.
+TYPE OF BUSINESS Information Technology
+
+DATES September 2014 - December 2015
+POSITION Sr. Network Engineer
+RESPONSIBILITIES worldwide.
+Supporting Cisco ASA and IOS majorly for US and UK and India customers
+Researching on device related issues/ bugs or to find new bugs which arises when
+customer issues are not being solved by regular troubleshooting.
+Great command on VPN implementation like: Site-to- Site, RAVPN, Anyconnect,
+GRE over IPsec, EZVPN, L2TP, PPTP.
+Assisting the customers in designing/ improvising their network and suggest
+possible security loopholes.
+Sound knowledge on the working on RADIUS and AAA with Cisco ASA and IOS.
+Product knowledge & technologies: Cisco ASA, L2L VPN, RA VPN, L2TP/PPtP, Cisco
+Anyconnect
+EMPLOYER Aricent Technologies.
+TYPE OF BUSINESS Information Technology
+
+DATES August 2013 - September 2014
+POSITION Network Engineer
+RESPONSIBILITIES Hands-on experience on Solarwinds, PRTG.
+Configuring, managing and maintaining Cisco ASA 5510 and Fortigate firewalls.
+Responding to trouble tickets within the given SLA.
+EMPLOYER PC Solutions Pvt. Ltd.
+TYPE OF BUSINESS Information Technology
+
+DATES March 2012 - January 2013
+POSITION Network Engineer
+RESPONSIBILITIES Provided desktop troubleshooting support to ensure seamless user experience
+and operational efficiency.
+Maintained network inventory, ensuring accurate tracking of devices and
+resources.
+Conducted CAT5/6 cabling installations to enhance network connectivity and
+performance.
+Managed network device maintenance, including patching and OS updates, to
+uphold system integrity.
+EMPLOYER Elixir CT
+TYPE OF BUSINESS Information Technology
+
+
+Education & Training
+
+
+DATES 1993-2005
+QUALIFICATION Higher Secondary
+PRINCIPAL STUDIES English Medium School
+INSTITUTION St. Joseph’s Convent School, Faridabad
+PAGE 3- RESUME OF Richardson Jose
+DATES 2005-2007
+QUALIFICATION Senior Secondary
+PRINCIPAL STUDIES Physics Chemistry Mathematics
+INSTITUTION Modern School, Faridabad
+DATES 2007-2011
+QUALIFICATION B.E Computer Engineering
+PRINCIPAL STUDIES Bachelors Degree
+INSTITUTION St. Vincent Pallotti College of Engineering & Technology
+LANGUAGES English Hindi Malayalam
+SOCIAL SKILLS AND
+Good soft spoken, effective verbal communication. Good in customer facing roles.
+COMPETENCIES
+Quick learner, team player and a positive & honest attitude.
+
+ADDITIONAL INFO I WAS BROUGHT IN AS A CONSULTANT AT KANORS EMR LTD., NOIDA TO STREAMLINE
+THEIR NETWORK SETUP. THE NETWORK WAS HIGH IN LATENCY, WHICH SLOWED THEIR
+PRODUCTIVITY. I STARTED OFF BY ANALYSING THE EXISTING SETUP, CREATED HLD/LLD
+AND RECOMMENDED BEST CONFIGURATIONS FOR THE EXISTING ROUTERS, SWITCHES,
+ANTI-VIRUS & SOPHOS FIREWALL. GAVE TRAININGS TO THEIR STAFF ON MAINTAINING
+THE WORKING SETUP, PERIODIC INVENTORY, PATCH & LICENSE UPDATES

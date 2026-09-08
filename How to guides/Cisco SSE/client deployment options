@@ -1,0 +1,148 @@
+// for deploying to small number of devices //
+@echo off
+setlocal EnableDelayedExpansion
+
+echo ==========================================
+echo Cisco Secure Client Installation Started
+echo ==========================================
+
+set LOGDIR=%TEMP%\CiscoSecureClientLogs
+
+if not exist "%LOGDIR%" mkdir "%LOGDIR%"
+
+::-------------------------------------------------
+:: Install Core VPN Module
+::-------------------------------------------------
+echo Installing Core Module...
+msiexec /i "cisco-secure-client-win-5.1.18.314-core-vpn-predeploy-k9.msi" ^
+/qn /norestart /L*v "%LOGDIR%\Core.log"
+
+if errorlevel 1 (
+    echo Core installation failed.
+    pause
+    exit /b 1
+)
+
+::-------------------------------------------------
+:: Install Secure Access Module
+::-------------------------------------------------
+echo Installing Secure Access Module...
+msiexec /i "cisco-secure-client-win-5.1.18.5828-zta-predeploy-k9.msi" ^
+/qn /norestart /L*v "%LOGDIR%\SecureAccess.log"
+
+if errorlevel 1 (
+    echo Secure Access installation failed.
+    pause
+    exit /b 1
+)
+
+::-------------------------------------------------
+:: Install Umbrella Module
+::-------------------------------------------------
+echo Installing Umbrella Module...
+msiexec /i "cisco-secure-client-win-5.1.18.314-umbrella-predeploy-k9.msi" ^
+/qn /norestart /L*v "%LOGDIR%\Umbrella.log"
+
+if errorlevel 1 (
+    echo Umbrella installation failed.
+    pause
+    exit /b 1
+)
+
+::-------------------------------------------------
+:: Install DART Module
+::-------------------------------------------------
+echo Installing DART Module...
+msiexec /i "cisco-secure-client-win-5.1.18.314-dart-predeploy-k9.msi" ^
+/qn /norestart /L*v "%LOGDIR%\DART.log"
+
+::-------------------------------------------------
+:: Copy Secure Access Profile
+::-------------------------------------------------
+echo.
+echo Copying OrgInfo.json...
+
+if not exist "C:\ProgramData\Cisco\Cisco Secure Client\Umbrella" (
+    mkdir "C:\ProgramData\Cisco\Cisco Secure Client\Umbrella"
+)
+
+copy /Y "OrgInfo.json" "C:\ProgramData\Cisco\Cisco Secure Client\Umbrella\" >nul
+
+::-------------------------------------------------
+:: Restart Secure Client Services
+::-------------------------------------------------
+net stop acumbrellaagent >nul 2>&1
+net start acumbrellaagent >nul 2>&1
+
+echo.
+echo ==========================================
+echo Installation Completed Successfully
+echo Logs are available in:
+echo %LOGDIR%
+echo ==========================================
+
+pause
+
+// for deploying to small number of devices //
+
+// for uninstallation to small number of devices //
+@echo off
+setlocal
+
+echo ==========================================
+echo Cisco Secure Client Uninstallation Started
+echo ==========================================
+
+set LOGDIR=%TEMP%\CiscoSecureClientLogs
+
+if not exist "%LOGDIR%" mkdir "%LOGDIR%"
+
+::------------------------------------------
+:: Uninstall DART
+::------------------------------------------
+if exist "cisco-secure-client-win-5.1.18.314-dart-predeploy-k9.msi" (
+    echo Uninstalling DART...
+    msiexec /x "cisco-secure-client-win-5.1.18.314-dart-predeploy-k9.msi" /qn /norestart /L*v "%LOGDIR%\Uninstall_DART.log"
+)
+
+::------------------------------------------
+:: Uninstall Umbrella
+::------------------------------------------
+if exist "cisco-secure-client-win-5.1.18.314-umbrella-predeploy-k9.msi" (
+    echo Uninstalling Umbrella...
+    msiexec /x "cisco-secure-client-win-5.1.18.314-umbrella-predeploy-k9.msi" /qn /norestart /L*v "%LOGDIR%\Uninstall_Umbrella.log"
+)
+
+::------------------------------------------
+:: Uninstall Secure Access
+::------------------------------------------
+if exist "cisco-secure-client-win-5.1.18.5828-zta-predeploy-k9.msi" (
+    echo Uninstalling Secure Access...
+    msiexec /x "cisco-secure-client-win-5.1.18.5828-zta-predeploy-k9.msi" /qn /norestart /L*v "%LOGDIR%\Uninstall_SecureAccess.log"
+)
+
+::------------------------------------------
+:: Uninstall Core
+::------------------------------------------
+if exist "cisco-secure-client-win-5.1.18.314-core-vpn-predeploy-k9.msi" (
+    echo Uninstalling Core...
+    msiexec /x "cisco-secure-client-win-5.1.18.314-core-vpn-predeploy-k9.msi" /qn /norestart /L*v "%LOGDIR%\Uninstall_Core.log"
+)
+
+::------------------------------------------
+:: Remove leftover folders
+::------------------------------------------
+echo Cleaning up...
+
+rmdir /S /Q "C:\ProgramData\Cisco\Cisco Secure Client" 2>nul
+
+echo.
+echo ==========================================
+echo Cisco Secure Client has been removed.
+
+// for uninstallation to small number of devices //
+echo Logs are available at:
+echo %LOGDIR%
+echo ==========================================
+
+pause

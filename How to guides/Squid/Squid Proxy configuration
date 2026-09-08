@@ -1,0 +1,12 @@
+# How to build a Squid proxy server
+# installation setup
+  # base.conf
+  # ssl.conf
+# containerization of Squid proxy
+# Tunnel setup from Squid proxy
+# Server internet access vs Third Party internet access Squid proxy use cases. 
+# GSLB with Squid proxy
+# squid config files. 
+# Azure DevOps integration 
+  # Repository structure
+
