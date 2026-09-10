@@ -1,1 +1,9 @@
 // How to integrate Entra ID with Cisco SSE //
+
+
+
+
+// Troubleshooting//
+SAML Decoder logs
+Azure provisioning logs
+Azure authentication logs
