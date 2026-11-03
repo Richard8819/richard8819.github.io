@@ -1,1 +1,3 @@
 // how to enroll with user certificate for ZTA and VPN // 
+ZTA supports client certificate based authentication AND SAML. 
+Anyconnect suports client certificate based authnetication OR SAML OR RADIUS
